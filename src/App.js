@@ -27,7 +27,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
@@ -44,7 +44,7 @@ function App(props) {
           />
           <Route path="/:slug" element={<ProductListPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
